@@ -1,0 +1,21 @@
+{
+  "name": "connection-tester",
+  "version": "0.0.1",
+  "description": "connection tester",
+  "main": "dist/connection-tester.js",
+  "scripts": {
+    "install": "npm run build",
+    "start": "node dist/connection-tester.js",
+    "build": "rollup --config rollup.config.js",
+    "prebublish": "npm run build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Glenn Vandeuren <vandeurenglenn@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "babel-plugin-external-helpers": "^6.18.0",
+    "babel-preset-es2015": "^6.18.0",
+    "rollup": "^0.36.3",
+    "rollup-plugin-babel": "^2.6.1"
+  }
+}
